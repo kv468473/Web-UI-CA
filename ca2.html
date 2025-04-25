@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linea Luxe - Admin</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="./Ornate Jewelry on Purple Dish.jpeg">
+                <img src="./Gold Necklace with Blue Gemstone Pendant.jpeg" alt="Jewelry on purple dish"
+                    class="d-inline-block align-text-top" style="height:30px; border-radius: 50%;">
+                Linea Luxe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ca1.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropDown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">About</a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Service 1</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Services
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Jewellery Showcase</a></li>
+                            <li><a class="dropdown-item" href="#">Custom Creation</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Service 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="./ca2.html">CA2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./ca3.html">CA3</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-light py-3 px-4 d-flex justify-content-end align-items-center mt-5 pt-4 ">
+        <h5 class="mb-0 pe-5"><img src="./user profile (1).png" alt="Profile" class="rounded-circle"
+                style="height: 40px; width: 40px;"></i>Welcome, Admin</h5>
+    </div>
+
+    <div class="container my-5">
+        <div class="row g-4 text-center">
+            <div class="col-md-3">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-users fa-2x text-primary mb-2"></i>
+                        <h6>Total Users <span class="badge bg-primary">1,200</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-dollar-sign fa-2x text-success mb-2"></i>
+                        <h6>Revenue <span class="badge bg-success">$24K</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-envelope fa-2x text-warning mb-2"></i>
+                        <h6>New Messages <span class="badge bg-warning">87</span></h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card shadow-sm">
+                    <div class="card-body">
+                        <i class="fas fa-signal fa-2x text-danger mb-2"></i>
+                        <h6>Active Sessions <span class="badge bg-danger">59</span></h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h4>User Table</h4>
+        <div class="table-responsive">
+            <table class="table table-bordered table-hover align-middle">
+                <thead class="table-dark">
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-success">
+                        <td>1</td>
+                        <td>Komal</td>
+                        <td>komalverma@example.com</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                        <td>
+                            <i class="fas fa-edit text-primary me-2"></i>
+                            <i class="fas fa-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr class="table-warning">
+                        <td>2</td>
+                        <td>Kiwi</td>
+                        <td>kiwi@example.com</td>
+                        <td>User</td>
+                        <td>Pending</td>
+                        <td>
+                            <i class="fas fa-edit text-primary me-2"></i>
+                            <i class="fas fa-trash text-danger"></i>
+                        </td>
+                    </tr>
+                    <tr class="table-danger">
+                        <td>3</td>
+                        <td>Saloni</td>
+                        <td>saloni@example.com</td>
+                        <td>Editor</td>
+                        <td>Inactive</td>
+                        <td>
+                            <i class="fas fa-edit text-primary me-2"></i>
+                            <i class="fas fa-trash text-danger"></i>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <h4>User Registration</h4>
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-control" placeholder="Enter name" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" placeholder="Enter email" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Password</label>
+                <input type="password" class="form-control" placeholder="Enter password" required />
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Role</label>
+                <select class="form-select">
+                    <option>User</option>
+                    <option>Admin</option>
+                    <option>Editor</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label d-block">Status</label>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="status" value="active" checked />
+                    <label class="form-check-label">Active</label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="status" value="inactive" />
+                    <label class="form-check-label">Inactive</label>
+                </div>
+            </div>
+            <div class="mb-3 form-check">
+                <input type="checkbox" class="form-check-input" id="termsCheck" required />
+                <label class="form-check-label" for="termsCheck">I agree to the terms and conditions</label>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Upload Picture</label>
+                <input class="form-control" type="file" />
+            </div>
+            <button type="submit" class="btn btn-danger">Register</button>
+        </form>
+    </div>
+
+    <footer class="bg-light text-center text-lg-start border-top mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6 text-md-start mb-3 mb-md-0">
+                    <p class="mb-0">&copy; 2025 Linea Luxe.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-dark me-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-dark me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-dark"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

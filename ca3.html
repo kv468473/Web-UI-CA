@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CA 3 - Enhanced Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            position: relative;
+        }
+
+        section {
+            padding: 60px 0;
+        }
+    </style>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarNav" data-bs-offset="70" tabindex="0">
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./Ornate Jewelry on Purple Dish.jpeg">
+                <img src="./Gold Necklace with Blue Gemstone Pendant.jpeg" alt="Jewelry on purple dish"
+                    class="d-inline-block align-text-top" style="height:30px; border-radius: 50%;">
+                Linea Luxe
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon" title="Toggle navigation"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="ca1.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#carouselSection" data-bs-toggle="tooltip" title="Jump to Carousel">CA
+                            3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#testimonials" data-bs-toggle="tooltip"
+                            title="See testimonials">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#reviews" data-bs-toggle="tooltip" title="View user reviews">User
+                            Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" data-bs-toggle="tooltip" title="Contact us">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="carouselSection">
+        <div id="jewelCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./jewel1.jpeg" class="d-block w-100" alt="Elegant Design"
+                        style="height: 400px; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Elegant Designs</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./jewel2.jpeg" class="d-block w-100" alt="Precision Craft"
+                        style="height: 400px; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Crafted With Precision</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./jewel3.jpeg" class="d-block w-100" alt="Timeless Beauty"
+                        style="height: 400px; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Timeless Beauty</h5>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#jewelCarousel" data-bs-slide="prev"
+                title="Previous slide">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#jewelCarousel" data-bs-slide="next"
+                title="Next slide">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            </button>
+        </div>
+    </section>
+
+    <section id="testimonials" class="bg-light">
+        <div class="container">
+            <h2>Testimonials</h2>
+            <p>"Absolutely stunning jewelry!" - A happy customer</p>
+        </div>
+    </section>
+
+    <section id="reviews">
+        <div class="container">
+            <h2>User Reviews</h2>
+            <p>"I love the craftsmanship and detail in each piece." - User123</p>
+        </div>
+    </section>
+
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#contactModal"
+                title="Click to open contact modal">Open Contact Modal</button>
+        </div>
+    </section>
+
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Fill out the form below to get in touch with us!
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        tooltipTriggerList.forEach(tooltipTriggerEl => {
+            new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
